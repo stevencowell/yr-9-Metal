@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 9 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 9: Clamping Techniques</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Clamps hold glued joints tight until the adhesive cures.  Use scrap blocks
+       between the clamp jaws and timber to prevent dents.  Place clamps on
+       opposite sides and tighten them evenly.  Too few clamps can leave gaps;
+       <em>over‑tightening</em> can crush soft wood.  Even pressure makes a strong,
+       straight joint.</p>
+
+    <form class="quiz" data-week="Week 9" id="support-week9-quiz">
+      <fieldset>
+        <legend><b>Week 9 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why do we use clamps when gluing wood?</p>
+            <label><input data-correct="false" name="w9_q1" type="radio"> A. To carry tools</label><br>
+            <label><input data-correct="true"  name="w9_q1" type="radio"> B. To hold pieces tight while the glue dries</label><br>
+            <label><input data-correct="false" name="w9_q1" type="radio"> C. To press on drawings</label><br>
+            <label><input data-correct="false" name="w9_q1" type="radio"> D. To hold measuring tools</label>
+          </li>
+          <li>
+            <p>What could happen if you don’t use enough clamps?</p>
+            <label><input data-correct="false" name="w9_q2" type="radio"> A. The wood will shine</label><br>
+            <label><input data-correct="true"  name="w9_q2" type="radio"> B. The joint may fall apart</label><br>
+            <label><input data-correct="false" name="w9_q2" type="radio"> C. The glue dries faster</label><br>
+            <label><input data-correct="false" name="w9_q2" type="radio"> D. It makes the project lighter</label>
+          </li>
+          <li>
+            <p>What should you put between the clamp and the wood?</p>
+            <label><input data-correct="false" name="w9_q3" type="radio"> A. Another clamp</label><br>
+            <label><input data-correct="false" name="w9_q3" type="radio"> B. Sandpaper</label><br>
+            <label><input data-correct="true"  name="w9_q3" type="radio"> C. Scrap wood blocks</label><br>
+            <label><input data-correct="false" name="w9_q3" type="radio"> D. A hammer</label>
+          </li>
+          <li>
+            <p>What is one sign that clamps are too tight?</p>
+            <label><input data-correct="false" name="w9_q4" type="radio"> A. The glue smells</label><br>
+            <label><input data-correct="false" name="w9_q4" type="radio"> B. The clamp moves</label><br>
+            <label><input data-correct="true"  name="w9_q4" type="radio"> C. The timber gets crushed or dented</label><br>
+            <label><input data-correct="false" name="w9_q4" type="radio"> D. The screw falls out</label>
+          </li>
+          <li>
+            <p>Where should clamps be placed for even pressure?</p>
+            <label><input data-correct="false" name="w9_q5" type="radio"> A. Only on one side</label><br>
+            <label><input data-correct="false" name="w9_q5" type="radio"> B. Randomly around the edge</label><br>
+            <label><input data-correct="true"  name="w9_q5" type="radio"> C. Opposite sides, spaced out evenly</label><br>
+            <label><input data-correct="false" name="w9_q5" type="radio"> D. Only in the middle</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

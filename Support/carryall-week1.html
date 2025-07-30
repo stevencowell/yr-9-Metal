@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 1 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 1: Workshop Safety</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Before we touch any tools, we make the workshop safe. Safety glasses, sturdy
+       shoes and listening to instructions protect us from flying chips and sharp
+       blades. Tie back long hair, remove jewellery and keep floors clear of cords
+       or scrap timber to prevent tripping. If you’re ever unsure, ask the teacher
+       first—guessing can lead to accidents. A tidy, calm workspace helps everyone
+       build great projects without injuries.</p>
+
+    <form class="quiz" data-week="Week 1" id="support-week1-quiz">
+      <fieldset>
+        <legend><b>Week 1 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why do we wear safety glasses in the workshop?</p>
+            <label><input data-correct="false" name="w1_q1" type="radio"> A. To see better</label><br>
+            <label><input data-correct="false" name="w1_q1" type="radio"> B. To look cool</label><br>
+            <label><input data-correct="true"  name="w1_q1" type="radio"> C. To protect our eyes from flying wood or dust</label><br>
+            <label><input data-correct="false" name="w1_q1" type="radio"> D. Because everyone else does</label>
+          </li>
+          <li>
+            <p>Which item is part of PPE (Personal Protective Equipment)?</p>
+            <label><input data-correct="false" name="w1_q2" type="radio"> A. Hat</label><br>
+            <label><input data-correct="false" name="w1_q2" type="radio"> B. Gloves</label><br>
+            <label><input data-correct="true"  name="w1_q2" type="radio"> C. Safety glasses</label><br>
+            <label><input data-correct="false" name="w1_q2" type="radio"> D. Sunglasses</label>
+          </li>
+          <li>
+            <p>What should you do if you're unsure how to use a tool?</p>
+            <label><input data-correct="false" name="w1_q3" type="radio"> A. Guess and try it out</label><br>
+            <label><input data-correct="false" name="w1_q3" type="radio"> B. Ask a friend to do it</label><br>
+            <label><input data-correct="true"  name="w1_q3" type="radio"> C. Leave it and ask the teacher</label><br>
+            <label><input data-correct="false" name="w1_q3" type="radio"> D. Wait until no one is watching</label>
+          </li>
+          <li>
+            <p>What is a safe way to behave in the workshop?</p>
+            <label><input data-correct="true"  name="w1_q4" type="radio"> A. Walk calmly and stay focused</label><br>
+            <label><input data-correct="false" name="w1_q4" type="radio"> B. Run to get tools quickly</label><br>
+            <label><input data-correct="false" name="w1_q4" type="radio"> C. Tell jokes while using machines</label><br>
+            <label><input data-correct="false" name="w1_q4" type="radio"> D. Keep your workspace messy</label>
+          </li>
+          <li>
+            <p>Why should we keep cords and scrap wood off the floor?</p>
+            <label><input data-correct="false" name="w1_q5" type="radio"> A. They’re annoying</label><br>
+            <label><input data-correct="false" name="w1_q5" type="radio"> B. They make the floor look messy</label><br>
+            <label><input data-correct="true"  name="w1_q5" type="radio"> C. They could cause someone to trip</label><br>
+            <label><input data-correct="false" name="w1_q5" type="radio"> D. They make the project harder</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

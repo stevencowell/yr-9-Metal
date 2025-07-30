@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 11 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 11: CAD – Computer‑Aided Design</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p><strong>CAD</strong> software lets you draw your carry‑all on a computer screen.
+       You can view it in 3‑D, spin it around and check sizes before you cut any
+       wood.  Digital models help spot problems early (like a handle hitting a
+       lid) and can create cutting lists automatically.  Popular student tools
+       include Tinkercad, SketchUp or Fusion 360.</p>
+
+    <form class="quiz" data-week="Week 11" id="support-week11-quiz">
+      <fieldset>
+        <legend><b>Week 11 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does CAD stand for?</p>
+            <label><input data-correct="false" name="w11_q1" type="radio"> A. Cutting And Drilling</label><br>
+            <label><input data-correct="true"  name="w11_q1" type="radio"> B. Computer-Aided Design</label><br>
+            <label><input data-correct="false" name="w11_q1" type="radio"> C. Carry-All Drawing</label><br>
+            <label><input data-correct="false" name="w11_q1" type="radio"> D. Computer Application Download</label>
+          </li>
+          <li>
+            <p>Why is CAD used in timber projects?</p>
+            <label><input data-correct="false" name="w11_q2" type="radio"> A. To build the real product</label><br>
+            <label><input data-correct="false" name="w11_q2" type="radio"> B. To make the room cooler</label><br>
+            <label><input data-correct="true"  name="w11_q2" type="radio"> C. To design and visualise projects before building</label><br>
+            <label><input data-correct="false" name="w11_q2" type="radio"> D. To paint timber automatically</label>
+          </li>
+          <li>
+            <p>Which of these is a CAD tool?</p>
+            <label><input data-correct="false" name="w11_q3" type="radio"> A. Screwdriver</label><br>
+            <label><input data-correct="false" name="w11_q3" type="radio"> B. Google Docs</label><br>
+            <label><input data-correct="true"  name="w11_q3" type="radio"> C. Fusion 360</label><br>
+            <label><input data-correct="false" name="w11_q3" type="radio"> D. Hammer</label>
+          </li>
+          <li>
+            <p>How does CAD help students improve their designs?</p>
+            <label><input data-correct="false" name="w11_q4" type="radio"> A. By making timber cheaper</label><br>
+            <label><input data-correct="true"  name="w11_q4" type="radio"> B. By allowing them to test and change designs easily</label><br>
+            <label><input data-correct="false" name="w11_q4" type="radio"> C. By cutting the wood for them</label><br>
+            <label><input data-correct="false" name="w11_q4" type="radio"> D. By showing videos</label>
+          </li>
+          <li>
+            <p>What is one thing you can do in CAD but not with pencil and paper?</p>
+            <label><input data-correct="false" name="w11_q5" type="radio"> A. Colour in your project</label><br>
+            <label><input data-correct="true"  name="w11_q5" type="radio"> B. Move and rotate your 3D model</label><br>
+            <label><input data-correct="false" name="w11_q5" type="radio"> C. Draw straight lines</label><br>
+            <label><input data-correct="false" name="w11_q5" type="radio"> D. Use a ruler</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

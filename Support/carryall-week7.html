@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 7 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 7: Hardware — Screws, Hinges & Handles</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p><strong>Hardware</strong> is the metal you add to timber.  Screws, nails, hinges and
+       handles must be chosen and fitted correctly.  Screws grip better than nails and
+       can be removed if you need to fix something later.  Always drill a
+       <em>pilot hole</em> slightly smaller than the screw to prevent the wood from
+       splitting.  Check screw length so it reaches into, but not through, the second
+       piece.  Good handle placement keeps the carry‑all balanced and comfortable
+       to hold.</p>
+
+    <form class="quiz" data-week="Week 7" id="support-week7-quiz">
+      <fieldset>
+        <legend><b>Week 7 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What is a pilot hole?</p>
+            <label><input data-correct="false" name="w7_q1" type="radio"> A. A hole to hold pencils</label><br>
+            <label><input data-correct="true"  name="w7_q1" type="radio"> B. A small hole drilled before putting in a screw</label><br>
+            <label><input data-correct="false" name="w7_q1" type="radio"> C. A space left for glue</label><br>
+            <label><input data-correct="false" name="w7_q1" type="radio"> D. A way to paint timber</label>
+          </li>
+          <li>
+            <p>Why do we use screws instead of nails for hardware?</p>
+            <label><input data-correct="false" name="w7_q2" type="radio"> A. Screws are cheaper</label><br>
+            <label><input data-correct="false" name="w7_q2" type="radio"> B. Screws look nicer</label><br>
+            <label><input data-correct="true"  name="w7_q2" type="radio"> C. Screws hold better and can be removed</label><br>
+            <label><input data-correct="false" name="w7_q2" type="radio"> D. Screws are easier to cut</label>
+          </li>
+          <li>
+            <p>What tool helps drive in screws?</p>
+            <label><input data-correct="false" name="w7_q3" type="radio"> A. Hammer</label><br>
+            <label><input data-correct="false" name="w7_q3" type="radio"> B. Handsaw</label><br>
+            <label><input data-correct="true"  name="w7_q3" type="radio"> C. Screwdriver</label><br>
+            <label><input data-correct="false" name="w7_q3" type="radio"> D. Marking gauge</label>
+          </li>
+          <li>
+            <p>Why should hardware like handles be placed carefully?</p>
+            <label><input data-correct="false" name="w7_q4" type="radio"> A. So they look cool</label><br>
+            <label><input data-correct="true"  name="w7_q4" type="radio"> B. So the project is easy and comfortable to use</label><br>
+            <label><input data-correct="false" name="w7_q4" type="radio"> C. So they cover up holes</label><br>
+            <label><input data-correct="false" name="w7_q4" type="radio"> D. So they match your shoes</label>
+          </li>
+          <li>
+            <p>Which item is NOT considered hardware for your project?</p>
+            <label><input data-correct="false" name="w7_q5" type="radio"> A. Screws</label><br>
+            <label><input data-correct="false" name="w7_q5" type="radio"> B. Hinges</label><br>
+            <label><input data-correct="true"  name="w7_q5" type="radio"> C. Timber panel</label><br>
+            <label><input data-correct="false" name="w7_q5" type="radio"> D. Handle</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

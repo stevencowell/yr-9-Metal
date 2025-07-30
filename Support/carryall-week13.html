@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 13 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 13: Evaluation & Peer Feedback</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>When your carry‑all is nearly finished, it’s time to <strong>evaluate</strong>.
+       Show it to classmates and ask for <em>peer feedback</em>. Start by sharing
+       what works well, then suggest improvements.  Good feedback is specific,
+       such as “Sand the corners evenly” instead of “Looks okay.”  Listening to
+       others helps you improve skills and make a better final product.</p>
+
+    <form class="quiz" data-week="Week 13" id="support-week13-quiz">
+      <fieldset>
+        <legend><b>Week 13 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does it mean to ‘evaluate’ your project?</p>
+            <label><input data-correct="false" name="w13_q1" type="radio"> A. Paint it neatly</label><br>
+            <label><input data-correct="false" name="w13_q1" type="radio"> B. Give it a name</label><br>
+            <label><input data-correct="true"  name="w13_q1" type="radio"> C. Look at what went well and what could improve</label><br>
+            <label><input data-correct="false" name="w13_q1" type="radio"> D. Ask the teacher to mark it</label>
+          </li>
+          <li>
+            <p>What should you do with feedback from your classmates?</p>
+            <label><input data-correct="false" name="w13_q2" type="radio"> A. Ignore it if you don’t agree</label><br>
+            <label><input data-correct="true"  name="w13_q2" type="radio"> B. Use it to improve your next project</label><br>
+            <label><input data-correct="false" name="w13_q2" type="radio"> C. Erase your design</label><br>
+            <label><input data-correct="false" name="w13_q2" type="radio"> D. Get upset</label>
+          </li>
+          <li>
+            <p>Which of these is an example of useful peer feedback?</p>
+            <label><input data-correct="false" name="w13_q3" type="radio"> A. “That looks cool!”</label><br>
+            <label><input data-correct="true"  name="w13_q3" type="radio"> B. “You should try sanding the corners more evenly.”</label><br>
+            <label><input data-correct="false" name="w13_q3" type="radio"> C. “Mine is better than yours.”</label><br>
+            <label><input data-correct="false" name="w13_q3" type="radio"> D. “You used the wrong colour.”</label>
+          </li>
+          <li>
+            <p>Why is peer feedback important?</p>
+            <label><input data-correct="false" name="w13_q4" type="radio"> A. So your friends get a good mark</label><br>
+            <label><input data-correct="false" name="w13_q4" type="radio"> B. So you can copy other projects</label><br>
+            <label><input data-correct="true"  name="w13_q4" type="radio"> C. It helps you learn and improve your work</label><br>
+            <label><input data-correct="false" name="w13_q4" type="radio"> D. To finish your work faster</label>
+          </li>
+          <li>
+            <p>When should you ask for feedback?</p>
+            <label><input data-correct="false" name="w13_q5" type="radio"> A. After the project is painted</label><br>
+            <label><input data-correct="true"  name="w13_q5" type="radio"> B. While you’re still working on it</label><br>
+            <label><input data-correct="false" name="w13_q5" type="radio"> C. At the end of the year</label><br>
+            <label><input data-correct="false" name="w13_q5" type="radio"> D. Only if something goes wrong</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

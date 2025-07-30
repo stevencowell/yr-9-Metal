@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 8 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 8: Adhesives & Gluing</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p><strong>PVA wood glue</strong> is the most common adhesive in school workshops.
+       Spread a thin layer on both joint faces, press them together and add clamps
+       so the glue cures under firm pressure.  Wipe away squeeze‑out before it
+       hardens.  Some glues (like epoxy) need good ventilation, so always read the
+       label and wear PPE if they have strong fumes.</p>
+
+    <form class="quiz" data-week="Week 8" id="support-week8-quiz">
+      <fieldset>
+        <legend><b>Week 8 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What kind of glue is most commonly used for wood in school?</p>
+            <label><input data-correct="false" name="w8_q1" type="radio"> A. Superglue</label><br>
+            <label><input data-correct="true"  name="w8_q1" type="radio"> B. PVA wood glue</label><br>
+            <label><input data-correct="false" name="w8_q1" type="radio"> C. Hot glue</label><br>
+            <label><input data-correct="false" name="w8_q1" type="radio"> D. Fabric glue</label>
+          </li>
+          <li>
+            <p>Why do we clamp glued parts?</p>
+            <label><input data-correct="false" name="w8_q2" type="radio"> A. To make them look flat</label><br>
+            <label><input data-correct="true"  name="w8_q2" type="radio"> B. So the parts stay tight and strong while drying</label><br>
+            <label><input data-correct="false" name="w8_q2" type="radio"> C. So the glue dries faster</label><br>
+            <label><input data-correct="false" name="w8_q2" type="radio"> D. So the wood bends better</label>
+          </li>
+          <li>
+            <p>What should you do if glue squeezes out the sides?</p>
+            <label><input data-correct="false" name="w8_q3" type="radio"> A. Leave it</label><br>
+            <label><input data-correct="true"  name="w8_q3" type="radio"> B. Wipe it off while still wet</label><br>
+            <label><input data-correct="false" name="w8_q3" type="radio"> C. Paint over it</label><br>
+            <label><input data-correct="false" name="w8_q3" type="radio"> D. Add more glue</label>
+          </li>
+          <li>
+            <p>What happens if you use the wrong type of glue for wood?</p>
+            <label><input data-correct="false" name="w8_q4" type="radio"> A. It works fine anyway</label><br>
+            <label><input data-correct="false" name="w8_q4" type="radio"> B. It smells better</label><br>
+            <label><input data-correct="true"  name="w8_q4" type="radio"> C. It might not hold and could break</label><br>
+            <label><input data-correct="false" name="w8_q4" type="radio"> D. It makes the wood softer</label>
+          </li>
+          <li>
+            <p>What do you always need when using strong‑smelling glue or epoxy?</p>
+            <label><input data-correct="false" name="w8_q5" type="radio"> A. A paintbrush</label><br>
+            <label><input data-correct="false" name="w8_q5" type="radio"> B. Sunglasses</label><br>
+            <label><input data-correct="true"  name="w8_q5" type="radio"> C. A fan or fresh air (ventilation)</label><br>
+            <label><input data-correct="false" name="w8_q5" type="radio"> D. Sticky tape</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

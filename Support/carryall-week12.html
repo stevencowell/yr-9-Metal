@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 12 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 12: CAM – Computer‑Aided Manufacturing</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p><strong>CAM</strong> turns your CAD drawing into machine instructions.
+       CNC routers or laser cutters follow these instructions to cut parts quickly
+       and accurately.  A good CAD model and correct safety setup are needed
+       before pressing “Start.”  Only trained operators run CAM machines, and
+       safety guards must stay closed during cutting.</p>
+
+    <form class="quiz" data-week="Week 12" id="support-week12-quiz">
+      <fieldset>
+        <legend><b>Week 12 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does CAM stand for?</p>
+            <label><input data-correct="false" name="w12_q1" type="radio"> A. Computer Auto Measuring</label><br>
+            <label><input data-correct="true"  name="w12_q1" type="radio"> B. Computer-Aided Manufacturing</label><br>
+            <label><input data-correct="false" name="w12_q1" type="radio"> C. Construction And Making</label><br>
+            <label><input data-correct="false" name="w12_q1" type="radio"> D. Clamp And Measure</label>
+          </li>
+          <li>
+            <p>What kind of machine might be used in CAM for timber projects?</p>
+            <label><input data-correct="false" name="w12_q2" type="radio"> A. Washing machine</label><br>
+            <label><input data-correct="true"  name="w12_q2" type="radio"> B. CNC router or laser cutter</label><br>
+            <label><input data-correct="false" name="w12_q2" type="radio"> C. Vacuum cleaner</label><br>
+            <label><input data-correct="false" name="w12_q2" type="radio"> D. Drill press only</label>
+          </li>
+          <li>
+            <p>Why is CAM useful in making timber products?</p>
+            <label><input data-correct="false" name="w12_q3" type="radio"> A. It takes longer</label><br>
+            <label><input data-correct="false" name="w12_q3" type="radio"> B. It can be used without a design</label><br>
+            <label><input data-correct="true"  name="w12_q3" type="radio"> C. It makes cutting more accurate and repeatable</label><br>
+            <label><input data-correct="false" name="w12_q3" type="radio"> D. It makes the timber heavier</label>
+          </li>
+          <li>
+            <p>What is one safety rule when using CAM machines?</p>
+            <label><input data-correct="false" name="w12_q4" type="radio"> A. Run the machine with the door open</label><br>
+            <label><input data-correct="false" name="w12_q4" type="radio"> B. Keep your face close to the laser</label><br>
+            <label><input data-correct="true"  name="w12_q4" type="radio"> C. Only trained people should operate them</label><br>
+            <label><input data-correct="false" name="w12_q4" type="radio"> D. Wear swimming goggles</label>
+          </li>
+          <li>
+            <p>Before using a CAM machine, what must be completed?</p>
+            <label><input data-correct="false" name="w12_q5" type="radio"> A. A nap</label><br>
+            <label><input data-correct="false" name="w12_q5" type="radio"> B. Drawing your plan with coloured pencils</label><br>
+            <label><input data-correct="true"  name="w12_q5" type="radio"> C. A CAD design that tells the machine what to cut</label><br>
+            <label><input data-correct="false" name="w12_q5" type="radio"> D. A timber strength test</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>
