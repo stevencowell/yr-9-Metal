@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 5 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 5: Measuring & Marking Out</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Accurate measuring and marking save time and timber. Use a ruler or tape
+       and mark lines with a sharp pencil or knife. Always <em>measure twice, cut once</em>.
+       Mark on the good face and cut on the waste side of the line so the part
+       stays the right size. If a mark looks wrong, erase it and re‑measure before
+       picking up the saw.</p>
+
+    <form class="quiz" data-week="Week 5" id="support-week5-quiz">
+      <fieldset>
+        <legend><b>Week 5 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does “measure twice, cut once” mean?</p>
+            <label><input data-correct="false" name="w5_q1" type="radio"> A. Always measure after you cut</label><br>
+            <label><input data-correct="true"  name="w5_q1" type="radio"> B. Double‑check measurements before cutting</label><br>
+            <label><input data-correct="false" name="w5_q1" type="radio"> C. Use a long ruler</label><br>
+            <label><input data-correct="false" name="w5_q1" type="radio"> D. Cut slowly so it looks neat</label>
+          </li>
+
+          <li>
+            <p>Which tool helps you draw a straight 90° line on timber?</p>
+            <label><input data-correct="false" name="w5_q2" type="radio"> A. Marking gauge</label><br>
+            <label><input data-correct="true"  name="w5_q2" type="radio"> B. Try square</label><br>
+            <label><input data-correct="false" name="w5_q2" type="radio"> C. Hammer</label><br>
+            <label><input data-correct="false" name="w5_q2" type="radio"> D. Clamp</label>
+          </li>
+
+          <li>
+            <p>What is the waste side of the line?</p>
+            <label><input data-correct="false" name="w5_q3" type="radio"> A. The part you throw in the bin</label><br>
+            <label><input data-correct="true"  name="w5_q3" type="radio"> B. The side you cut on to keep the piece the right size</label><br>
+            <label><input data-correct="false" name="w5_q3" type="radio"> C. The middle of the board</label><br>
+            <label><input data-correct="false" name="w5_q3" type="radio"> D. The side with nails in it</label>
+          </li>
+
+          <li>
+            <p>Why is accurate marking important before cutting wood?</p>
+            <label><input data-correct="false" name="w5_q4" type="radio"> A. To decorate the timber</label><br>
+            <label><input data-correct="true"  name="w5_q4" type="radio"> B. So the piece fits and nothing is wasted</label><br>
+            <label><input data-correct="false" name="w5_q4" type="radio"> C. To save time using power tools</label><br>
+            <label><input data-correct="false" name="w5_q4" type="radio"> D. To make drawing fun</label>
+          </li>
+
+          <li>
+            <p>What should you do if your marking looks wrong?</p>
+            <label><input data-correct="false" name="w5_q5" type="radio"> A. Keep going anyway</label><br>
+            <label><input data-correct="false" name="w5_q5" type="radio"> B. Cut and see what happens</label><br>
+            <label><input data-correct="true"  name="w5_q5" type="radio"> C. Erase and check your measurements again</label><br>
+            <label><input data-correct="false" name="w5_q5" type="radio"> D. Ask a friend to fix it</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 4 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 4: Materials & Sustainability</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Selecting timber is both an engineering and environmental choice. Plantation pine is popular
+       because it’s light, easy to cut and regrows quickly, making it sustainable.  Using recycled
+       offcuts saves money and keeps wood out of landfill.  Avoid rare hardwoods that take decades
+       to replace.  Good designers plan cuts to use every piece and think about how each material
+       affects forests and carbon footprint.</p>
+
+    <form class="quiz" data-week="Week 4" id="support-week4-quiz">
+      <fieldset>
+        <legend><b>Week 4 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Why is plantation pine a good timber choice for school projects?</p>
+            <label><input data-correct="false" name="w4_q1" type="radio"> A. It’s expensive and rare</label><br>
+            <label><input data-correct="true"  name="w4_q1" type="radio"> B. It’s strong and grows back quickly</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> C. It’s only used in furniture shops</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> D. It comes in bright colours</label>
+          </li>
+
+          <li>
+            <p>What does ‘sustainable’ mean when choosing timber?</p>
+            <label><input data-correct="false" name="w4_q2" type="radio"> A. It lasts a long time in the sun</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> B. It’s easy to cut with any tool</label><br>
+            <label><input data-correct="true"  name="w4_q2" type="radio"> C. It doesn’t run out because it can be regrown</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> D. It’s soft and light</label>
+          </li>
+
+          <li>
+            <p>Which material would be best for reducing waste?</p>
+            <label><input data-correct="false" name="w4_q3" type="radio"> A. New exotic hardwood</label><br>
+            <label><input data-correct="true"  name="w4_q3" type="radio"> B. Recycled timber or leftover offcuts</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> C. Plastic boards</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> D. Imported rainforest timber</label>
+          </li>
+
+          <li>
+            <p>What is one reason to avoid rare hardwoods?</p>
+            <label><input data-correct="false" name="w4_q4" type="radio"> A. They’re not good to look at</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> B. They split too easily</label><br>
+            <label><input data-correct="true"  name="w4_q4" type="radio"> C. They take a long time to grow back</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> D. They are full of glue</label>
+          </li>
+
+          <li>
+            <p>Which of these is an eco‑friendly choice in your project?</p>
+            <label><input data-correct="false" name="w4_q5" type="radio"> A. Throwing away offcuts</label><br>
+            <label><input data-correct="true"  name="w4_q5" type="radio"> B. Using timber from local sustainable forests</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> C. Cutting extra pieces “just in case”</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> D. Painting it bright red</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

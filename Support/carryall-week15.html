@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 15 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 15: Reflection & Sharing</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p><strong>Reflection</strong> means thinking about what you learned and how you
+       worked.  Ask yourself what skills improved, what challenges you faced and
+       what you would change next time.  Sharing your finished carry‑all with
+       others (classmates, family) shows your skills and helps you explain your
+       design choices.</p>
+
+    <form class="quiz" data-week="Week 15" id="support-week15-quiz">
+      <fieldset>
+        <legend><b>Week 15 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does it mean to reflect on your project?</p>
+            <label><input data-correct="false" name="w15_q1" type="radio"> A. Look at yourself in a mirror</label><br>
+            <label><input data-correct="true"  name="w15_q1" type="radio"> B. Think back on what you learned and how you worked</label><br>
+            <label><input data-correct="false" name="w15_q1" type="radio"> C. Ask others what they did</label><br>
+            <label><input data-correct="false" name="w15_q1" type="radio"> D. Talk about other projects</label>
+          </li>
+          <li>
+            <p>Which question helps you reflect on your project?</p>
+            <label><input data-correct="false" name="w15_q2" type="radio"> A. What was for lunch today?</label><br>
+            <label><input data-correct="true"  name="w15_q2" type="radio"> B. What would I do differently next time?</label><br>
+            <label><input data-correct="false" name="w15_q2" type="radio"> C. How much glue did I use?</label><br>
+            <label><input data-correct="false" name="w15_q2" type="radio"> D. How many people liked it?</label>
+          </li>
+          <li>
+            <p>Why is it good to share what you made?</p>
+            <label><input data-correct="false" name="w15_q3" type="radio"> A. To make others jealous</label><br>
+            <label><input data-correct="true"  name="w15_q3" type="radio"> B. To show your skills and explain your thinking</label><br>
+            <label><input data-correct="false" name="w15_q3" type="radio"> C. To avoid getting marked</label><br>
+            <label><input data-correct="false" name="w15_q3" type="radio"> D. To copy someone else</label>
+          </li>
+          <li>
+            <p>What could you write in a reflection?</p>
+            <label><input data-correct="false" name="w15_q4" type="radio"> A. “I did nothing.”</label><br>
+            <label><input data-correct="false" name="w15_q4" type="radio"> B. “It was all bad.”</label><br>
+            <label><input data-correct="true"  name="w15_q4" type="radio"> C. “I learned how to use tools and would take more care with glue next time.”</label><br>
+            <label><input data-correct="false" name="w15_q4" type="radio"> D. “My friend helped me.”</label>
+          </li>
+          <li>
+            <p>How can reflection help with your next project?</p>
+            <label><input data-correct="false" name="w15_q5" type="radio"> A. It doesn’t really help</label><br>
+            <label><input data-correct="false" name="w15_q5" type="radio"> B. It shows what you did wrong</label><br>
+            <label><input data-correct="true"  name="w15_q5" type="radio"> C. It helps you make better choices and learn from mistakes</label><br>
+            <label><input data-correct="false" name="w15_q5" type="radio"> D. It fills up your book</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

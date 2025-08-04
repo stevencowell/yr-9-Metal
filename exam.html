@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="End‑of‑Year Exam – 9‑Metalwork Program" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>End‑of‑Year Exam – 9‑Metalwork Program</title>
+  <link rel="stylesheet" href="carryall.css" />
+  <style>
+    /* Simple overlay for password entry */
+    #password-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #password-overlay div {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    #password-overlay input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #password-overlay button {
+      padding: 8px 16px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* Styles for the exam form */
+    form.exam-form ol {
+      margin-left: 20px;
+    }
+    form.exam-form ul {
+      list-style-type: upper-alpha;
+      margin-left: 20px;
+    }
+    form.exam-form textarea {
+      width: 100%;
+      min-height: 80px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 6px;
+      font-family: inherit;
+      font-size: 14px;
+      resize: vertical;
+    }
+    .exam-msg {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>9‑Metalwork Program – End‑of‑Year Exam</h1>
+  </header>
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+  <main class="content">
+    <!-- Password overlay -->
+    <div id="password-overlay">
+      <div>
+        <p>Please enter the exam password to begin:</p>
+        <input type="password" id="exam-password" placeholder="Enter password" />
+        <button id="password-submit-btn">Unlock Exam</button>
+        <p id="password-error" style="color:red;display:none;">Incorrect password. Please try again.</p>
+      </div>
+    </div>
+    <!-- Exam content hidden until correct password is entered -->
+    <div id="exam-content" style="display:none;">
+      <section>
+        <h2>Instructions</h2>
+        <p><strong>Duration:</strong> 2 hours &nbsp;|&nbsp; <strong>Total Marks:</strong> 70</p>
+        <p>Answer all questions. Read each section carefully and write your answers clearly in the spaces provided. Use diagrams where appropriate. Once complete, click <em>Submit Exam</em> at the bottom of the page.</p>
+      </section>
+      <form id="exam-form" class="exam-form">
+        <h2>Section A – Multiple Choice (20 marks)</h2>
+        <p>Circle the letter of the correct answer for each question. Each question is worth 2 marks.</p>
+        <ol class="mc-list">
+          <li>
+            Which control method in the hierarchy of controls is the most effective at reducing risk?
+            <ul>
+              <li><label><input type="radio" name="q1" value="PPE" /> PPE</label></li>
+              <li><label><input type="radio" name="q1" value="Substitution" /> Substitution</label></li>
+              <li><label><input type="radio" name="q1" value="Elimination" /> Elimination</label></li>
+              <li><label><input type="radio" name="q1" value="Administrative control" /> Administrative control</label></li>
+            </ul>
+          </li>
+          <li>
+            Non‑ferrous metals typically:
+            <ul>
+              <li><label><input type="radio" name="q2" value="Are magnetic" /> Are magnetic</label></li>
+              <li><label><input type="radio" name="q2" value="Are heavy" /> Are heavy</label></li>
+              <li><label><input type="radio" name="q2" value="Resist corrosion" /> Resist corrosion</label></li>
+              <li><label><input type="radio" name="q2" value="Contain more than 50 % iron" /> Contain more than 50 % iron</label></li>
+            </ul>
+          </li>
+          <li>
+            The tool used to mark parallel lines from an edge is called:
+            <ul>
+              <li><label><input type="radio" name="q3" value="Vernier callipers" /> Vernier callipers</label></li>
+              <li><label><input type="radio" name="q3" value="Odd‑leg (Jenny) callipers" /> Odd‑leg (Jenny) callipers</label></li>
+              <li><label><input type="radio" name="q3" value="Engineer’s square" /> Engineer’s square</label></li>
+              <li><label><input type="radio" name="q3" value="Dot punch" /> Dot punch</label></li>
+            </ul>
+          </li>
+          <li>
+            During shearing operations, clearance between the punch and die typically ranges between:
+            <ul>
+              <li><label><input type="radio" name="q4" value="1–2 %" /> 1–2 % of sheet thickness</label></li>
+              <li><label><input type="radio" name="q4" value="5–40 %" /> 5–40 % of sheet thickness</label></li>
+              <li><label><input type="radio" name="q4" value="50–60 %" /> 50–60 % of sheet thickness</label></li>
+              <li><label><input type="radio" name="q4" value="No clearance" /> No clearance is needed</label></li>
+            </ul>
+          </li>
+          <li>
+            Gas Metal Arc Welding (GMAW) uses what to shield the weld pool?
+            <ul>
+              <li><label><input type="radio" name="q5" value="Water" /> Water</label></li>
+              <li><label><input type="radio" name="q5" value="Vacuum" /> Vacuum</label></li>
+              <li><label><input type="radio" name="q5" value="Shielding gas" /> Shielding gas</label></li>
+              <li><label><input type="radio" name="q5" value="Paint" /> Paint</label></li>
+            </ul>
+          </li>
+          <li>
+            Annealing of steel generally:
+            <ul>
+              <li><label><input type="radio" name="q6" value="Hardens" /> Hardens the metal</label></li>
+              <li><label><input type="radio" name="q6" value="Brittle" /> Makes it brittle</label></li>
+              <li><label><input type="radio" name="q6" value="Softens" /> Softens the metal and increases ductility</label></li>
+              <li><label><input type="radio" name="q6" value="No effect" /> Has no effect</label></li>
+            </ul>
+          </li>
+          <li>
+            What is the purpose of a centre punch?
+            <ul>
+              <li><label><input type="radio" name="q7" value="Mark centre" /> To mark the centre of a hole before drilling</label></li>
+              <li><label><input type="radio" name="q7" value="Cut threads" /> To cut threads</label></li>
+              <li><label><input type="radio" name="q7" value="Draw circles" /> To draw circles</label></li>
+              <li><label><input type="radio" name="q7" value="Measure thickness" /> To measure thickness</label></li>
+            </ul>
+          </li>
+          <li>
+            When creating screw threads inside a hole, the process is called:
+            <ul>
+              <li><label><input type="radio" name="q8" value="Drilling" /> Drilling</label></li>
+              <li><label><input type="radio" name="q8" value="Knurling" /> Knurling</label></li>
+              <li><label><input type="radio" name="q8" value="Tapping" /> Tapping</label></li>
+              <li><label><input type="radio" name="q8" value="Milling" /> Milling</label></li>
+            </ul>
+          </li>
+          <li>
+            Which machine process uses a high‑power beam to cut or melt sheet material precisely?
+            <ul>
+              <li><label><input type="radio" name="q9" value="Shearing" /> Shearing</label></li>
+              <li><label><input type="radio" name="q9" value="Laser cutting" /> Laser cutting</label></li>
+              <li><label><input type="radio" name="q9" value="Buffing" /> Buffing</label></li>
+              <li><label><input type="radio" name="q9" value="Forging" /> Forging</label></li>
+            </ul>
+          </li>
+          <li>
+            In project planning, a cutting list is used to:
+            <ul>
+              <li><label><input type="radio" name="q10" value="Organise time" /> Organise time</label></li>
+              <li><label><input type="radio" name="q10" value="Cost materials" /> Cost materials</label></li>
+              <li><label><input type="radio" name="q10" value="Record measurements" /> Record measurements and quantities of materials required</label></li>
+              <li><label><input type="radio" name="q10" value="Evaluate product" /> Evaluate the final product</label></li>
+            </ul>
+          </li>
+        </ol>
+        <h2>Section B – Short Answer (30 marks)</h2>
+        <p>Answer each question in a few sentences or a short paragraph. Each question is worth 6 marks.</p>
+        <ol start="11">
+          <li>
+            Describe the five steps of the hierarchy of control and explain why elimination is preferred over PPE.
+            <textarea name="q11"></textarea>
+          </li>
+          <li>
+            Compare ferrous and non‑ferrous metals in terms of composition, properties and typical applications. Provide at least two examples of each.
+            <textarea name="q12"></textarea>
+          </li>
+          <li>
+            Explain how to perform a risk assessment using a risk matrix. Include what factors you consider and how you prioritise hazards.
+            <textarea name="q13"></textarea>
+          </li>
+          <li>
+            Outline the sequence of steps when marking out and cutting sheet metal for a project, including the tools you would use.
+            <textarea name="q14"></textarea>
+          </li>
+          <li>
+            Explain the difference between quenching and tempering. Why might you temper a steel part after quenching?
+            <textarea name="q15"></textarea>
+          </li>
+        </ol>
+        <h2>Section C – Extended Response (20 marks)</h2>
+        <p>Answer the following questions in detail. Use diagrams where appropriate. Each question is worth 10 marks.</p>
+        <ol start="16">
+          <li>
+            Design a process plan for fabricating a sheet‑metal toolbox. Include material selection, marking out, cutting, forming, joining and finishing. Discuss safety considerations and how you would manage the project timeline.
+            <textarea name="q16" style="min-height: 120px;"></textarea>
+          </li>
+          <li>
+            Discuss the advantages and limitations of CNC and advanced manufacturing technologies compared to conventional manual processes in metalworking. Include examples such as laser cutting and 3D printing, and consider factors like accuracy, repeatability, cost and suitability for one‑off vs mass production.
+            <textarea name="q17" style="min-height: 120px;"></textarea>
+          </li>
+        </ol>
+        <button type="button" onclick="submitExam()">Submit Exam</button>
+        <p class="exam-msg"></p>
+      </form>
+    </div>
+  </main>
+  <script src="sharedSubmission.js"></script>
+  <script>
+    const EXAM_PASSWORD = '8142';
+    // password checking
+    document.getElementById('password-submit-btn').addEventListener('click', function() {
+      const entered = document.getElementById('exam-password').value.trim();
+      const error = document.getElementById('password-error');
+      if (entered === EXAM_PASSWORD) {
+        document.getElementById('password-overlay').style.display = 'none';
+        document.getElementById('exam-content').style.display = 'block';
+      } else {
+        error.style.display = 'block';
+      }
+    });
+
+    function submitExam() {
+      showNamePrompt().then((name) => {
+        if (!name) return;
+        const form = document.getElementById('exam-form');
+        const responses = [];
+        // Multiple choice answers: push the value of the selected radio for each question 1–10
+        for (let i = 1; i <= 10; i++) {
+          const checked = form.querySelector('input[name="q' + i + '"]:checked');
+          responses.push(checked ? checked.value : '');
+        }
+        // Short and extended responses: q11–q17
+        for (let i = 11; i <= 17; i++) {
+          const ta = form.querySelector('textarea[name="q' + i + '"]');
+          responses.push(ta ? ta.value.trim() : '');
+        }
+        const payload = {
+          studentName: name,
+          quizNumber: 'EXAM',
+          week: 'End of year exam',
+          timestamp: new Date().toISOString(),
+          responses
+        };
+        // Post directly to the Google Apps Script. Send JSON so that
+        // e.postData.contents in the Apps Script contains the JSON string.
+        if (typeof SCRIPT_URL !== 'undefined') {
+          fetch(SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          }).then(() => {
+            document.querySelector('.exam-msg').textContent = 'Your exam has been submitted!';
+          }).catch(() => {
+            document.querySelector('.exam-msg').textContent = 'Error submitting.';
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

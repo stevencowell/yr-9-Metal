@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 3 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 3: Sketching & Developing Ideas</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>Sketches turn ideas into clear plans. Draw the front, side or top views
+       of your carry‑all, label key sizes and add notes (e.g. handle position).
+       Neat sketches help classmates—and future you—understand the design.
+       When someone offers feedback, consider it and refine your drawing; fixing
+       a sketch is cheaper than fixing cut timber!</p>
+
+    <form class="quiz" data-week="Week 3" id="support-week3-quiz">
+      <fieldset>
+        <legend><b>Week 3 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What does a sketch help you do?</p>
+            <label><input data-correct="false" name="w3_q1" type="radio"> A. Finish the project faster</label><br>
+            <label><input data-correct="false" name="w3_q1" type="radio"> B. Make fun of other designs</label><br>
+            <label><input data-correct="true"  name="w3_q1" type="radio"> C. Plan and improve your design before cutting</label><br>
+            <label><input data-correct="false" name="w3_q1" type="radio"> D. Use less paper</label>
+          </li>
+          <li>
+            <p>What should you label on your sketch?</p>
+            <label><input data-correct="false" name="w3_q2" type="radio"> A. Your favourite colour</label><br>
+            <label><input data-correct="true"  name="w3_q2" type="radio"> B. How long each part is</label><br>
+            <label><input data-correct="false" name="w3_q2" type="radio"> C. Where your friends sit</label><br>
+            <label><input data-correct="false" name="w3_q2" type="radio"> D. The name of the saw</label>
+          </li>
+          <li>
+            <p>Why should your sketch be neat and clear?</p>
+            <label><input data-correct="false" name="w3_q3" type="radio"> A. So it looks like art</label><br>
+            <label><input data-correct="false" name="w3_q3" type="radio"> B. So it can be displayed</label><br>
+            <label><input data-correct="true"  name="w3_q3" type="radio"> C. So others can understand your idea</label><br>
+            <label><input data-correct="false" name="w3_q3" type="radio"> D. So you don’t have to build it</label>
+          </li>
+          <li>
+            <p>What is the front view in a drawing?</p>
+            <label><input data-correct="false" name="w3_q4" type="radio"> A. The top of the project</label><br>
+            <label><input data-correct="true"  name="w3_q4" type="radio"> B. What the project looks like from the front</label><br>
+            <label><input data-correct="false" name="w3_q4" type="radio"> C. A drawing of the tools</label><br>
+            <label><input data-correct="false" name="w3_q4" type="radio"> D. Instructions for gluing</label>
+          </li>
+          <li>
+            <p>What should you do when someone gives feedback on your sketch?</p>
+            <label><input data-correct="false" name="w3_q5" type="radio"> A. Get upset</label><br>
+            <label><input data-correct="false" name="w3_q5" type="radio"> B. Change your project completely</label><br>
+            <label><input data-correct="true"  name="w3_q5" type="radio"> C. Consider it and improve your drawing</label><br>
+            <label><input data-correct="false" name="w3_q5" type="radio"> D. Throw out the drawing</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

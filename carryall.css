@@ -1,0 +1,75 @@
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+a { text-decoration: none; color: inherit; cursor: pointer; }
+h1, h2, h3, h4, h5 { margin: 0 0 10px 0; }
+header { background: #007bff; color: #fff; padding: 20px; text-align: center; }
+header h1 { font-size: 2.5em; }
+header p { font-size: 1.2em; }
+nav { display: flex; justify-content: center; background: #0056b3; flex-wrap: wrap; }
+nav a { padding: 15px 20px; color: #fff; display: inline-block; transition: background 0.3s; text-decoration: none; }
+nav a:hover, nav a.active { background: #003f80; }
+.google-classroom { background: #fffbcc; padding: 20px; text-align: center; border: 1px solid #e0e0e0; margin: 20px auto; width: 90%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 5px; }
+.google-classroom h2 { color: #007bff; margin-top: 0; }
+.google-classroom p { font-size: 1.1em; }
+.google-classroom a { display: inline-block; background: #007bff; color: #fff; padding: 10px 20px; margin-top: 10px; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+.google-classroom a:hover { background: #0056b3; }
+main.content { padding: 20px; }
+.content-section { display: none; background: #fff; margin: 10px auto; padding: 20px; width: 90%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 5px; max-width:800px; }
+.content-section.active,
+.content-section:target {
+  display: block;
+}
+.content-section h2 { color: #007bff; margin-bottom: 15px; border-bottom: 2px solid #f4f4f4; padding-bottom: 5px; }
+.accordion details { background: #e9ecef; margin: 8px 0; border-radius: 4px; }
+.accordion summary { padding: 12px 16px; cursor: pointer; font-weight: bold; }
+.accordion summary::-webkit-details-marker { color: #007bff; }
+.accordion details[open] summary { background: #d0d7de; }
+.accordion p { margin: 10px 16px; }
+.quiz { background: #f9f9f9; padding: 15px; border: 1px solid #ddd; margin-top: 20px; border-radius: 5px; }
+.quiz ol { padding-left: 20px; }
+.quiz li { margin-bottom: 15px; }
+.quiz button { margin-top: 10px; padding: 8px 12px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.quiz-msg { display: block; margin-top: 10px; font-weight: bold; }
+/* Added styles for Support and Advanced pages.
+ * Support and advanced HTML files use a <details> element at the root of the body
+ * to wrap the content. These rules apply a card-like appearance similar to the
+ * main theory pages. They intentionally only target top-level details elements,
+ * so they won't affect the accordion lists on the index page. */
+body > details {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+body > details summary {
+  background: #007bff;
+  color: #fff;
+  padding: 15px 20px;
+  margin: -20px -20px 20px -20px;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body > details[open] summary {
+  background: #0056b3;
+}
+
+body > details article {
+  margin-top: 0;
+}
+
+/* Style for generic quiz check buttons used in support pages. */
+.check-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#studentName { margin-bottom: 1rem; padding: 8px; width: 100%; max-width:300px; font-size:1rem; }

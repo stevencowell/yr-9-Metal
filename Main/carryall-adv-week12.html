@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 12 Advanced Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 12: Assembly Scenario</b></summary>
+  <article>
+    <h4>Advanced Theory: Assembly Scenario</h4>
+    <p>CAM software converts geometry into toolpaths.  Adaptive clearing maintains constant cutter engagement, lowering tool wear.  Feed rate (F) combines chip‑load and spindle speed (S).  Post‑processors output machine‑specific G/M codes; modal commands persist until changed.  Lead‑in arcs (G3) reduce cutter shock.  Tool length offset (G43) relies on accurate touch‑off probing.  High‑speed machining uses look‑ahead controllers to maintain corner quality at &gt;10 m min⁻¹.</p>
+
+    <form class="quiz" data-week="Week 12" id="adv-week12-quiz">
+      <fieldset>
+        <legend><b>Week 12 Advanced Quiz</b></legend>
+        <ol>
+          <li>
+            <p>Adaptive clearing keeps:</p>
+            <label><input data-correct="false" name="w12_q1" type="radio"> A. tool deflection high</label><br>
+            <label><input data-correct="true" name="w12_q1" type="radio"> B. chip‑load constant</label><br>
+            <label><input data-correct="false" name="w12_q1" type="radio"> C. spindle speed idle</label><br>
+            <label><input data-correct="false" name="w12_q1" type="radio"> D. Z depth fixed</label><br>
+          </li>
+          <li>
+            <p>Modal G‑code means command:</p>
+            <label><input data-correct="false" name="w12_q2" type="radio"> A. applies only once</label><br>
+            <label><input data-correct="true" name="w12_q2" type="radio"> B. persists until another code overrides</label><br>
+            <label><input data-correct="false" name="w12_q2" type="radio"> C. is comment only</label><br>
+            <label><input data-correct="false" name="w12_q2" type="radio"> D. requires sub‑routine</label><br>
+          </li>
+          <li>
+            <p>Feed rate is calculated from spindle speed and:</p>
+            <label><input data-correct="false" name="w12_q3" type="radio"> A. coolant flow</label><br>
+            <label><input data-correct="true" name="w12_q3" type="radio"> B. chip‑load per tooth</label><br>
+            <label><input data-correct="false" name="w12_q3" type="radio"> C. tool flute length</label><br>
+            <label><input data-correct="false" name="w12_q3" type="radio"> D. machine weight</label><br>
+          </li>
+          <li>
+            <p>G43 in G‑code activates:</p>
+            <label><input data-correct="false" name="w12_q4" type="radio"> A. tool radius compensation</label><br>
+            <label><input data-correct="true" name="w12_q4" type="radio"> B. tool length offset</label><br>
+            <label><input data-correct="false" name="w12_q4" type="radio"> C. cutter coolant</label><br>
+            <label><input data-correct="false" name="w12_q4" type="radio"> D. rapid move</label><br>
+          </li>
+          <li>
+            <p>Look‑ahead control improves:</p>
+            <label><input data-correct="false" name="w12_q5" type="radio"> A. network latency</label><br>
+            <label><input data-correct="true" name="w12_q5" type="radio"> B. path accuracy at high speed</label><br>
+            <label><input data-correct="false" name="w12_q5" type="radio"> C. paint finish</label><br>
+            <label><input data-correct="false" name="w12_q5" type="radio"> D. tool colour</label><br>
+          </li>
+          <li>
+            <p>Lead‑in arc before cutting reduces:</p>
+            <label><input data-correct="false" name="w12_q6" type="radio"> A. cycle time</label><br>
+            <label><input data-correct="true" name="w12_q6" type="radio"> B. shock loading on cutter</label><br>
+            <label><input data-correct="false" name="w12_q6" type="radio"> C. code lines</label><br>
+            <label><input data-correct="false" name="w12_q6" type="radio"> D. vacuum pressure</label><br>
+          </li>
+          <li>
+            <p>A post‑processor is selected based on:</p>
+            <label><input data-correct="false" name="w12_q7" type="radio"> A. material density</label><br>
+            <label><input data-correct="true" name="w12_q7" type="radio"> B. CNC machine model and controller</label><br>
+            <label><input data-correct="false" name="w12_q7" type="radio"> C. tool diameter</label><br>
+            <label><input data-correct="false" name="w12_q7" type="radio"> D. operator’s name</label><br>
+          </li>
+          <li>
+            <p>Peck drilling cycles (G83) help remove:</p>
+            <label><input data-correct="false" name="w12_q8" type="radio"> A. heat only</label><br>
+            <label><input data-correct="true" name="w12_q8" type="radio"> B. chips from deep holes</label><br>
+            <label><input data-correct="false" name="w12_q8" type="radio"> C. surface finish marks</label><br>
+            <label><input data-correct="false" name="w12_q8" type="radio"> D. tool offsets</label><br>
+          </li>
+          <li>
+            <p>High‑speed machining feedrates commonly exceed:</p>
+            <label><input data-correct="false" name="w12_q9" type="radio"> A. 1 m min⁻¹</label><br>
+            <label><input data-correct="false" name="w12_q9" type="radio"> B. 5 m min⁻¹</label><br>
+            <label><input data-correct="true" name="w12_q9" type="radio"> C. 10 m min⁻¹</label><br>
+            <label><input data-correct="false" name="w12_q9" type="radio"> D. 100 m min⁻¹</label><br>
+          </li>
+          <li>
+            <p>Cutter engagement angle is primarily controlled by:</p>
+            <label><input data-correct="true" name="w12_q10" type="radio"> A. step‑over</label><br>
+            <label><input data-correct="false" name="w12_q10" type="radio"> B. step‑down</label><br>
+            <label><input data-correct="false" name="w12_q10" type="radio"> C. coolant type</label><br>
+            <label><input data-correct="false" name="w12_q10" type="radio"> D. post‑processor</label><br>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitAdvancedQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

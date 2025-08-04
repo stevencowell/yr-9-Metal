@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 4 Advanced Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 4: Materials Choice</b></summary>
+  <article>
+    <h4>Advanced Theory: Materials Choice</h4>
+    <p>In industrial production, parts are referenced to a single absolute coordinate system.  G‑code commands (e.g. G0 rapid, G1 linear feed) drive CNC routers to ±0.05 mm tolerance.  Tolerance stack‑up analysis ensures assembled boxes remain square when each side could be ±0.1 mm out.  Toolpaths balance feed speed and chip‑load to minimise burning and tear‑out while extending cutter life.  Finger‑jointing lines use automatic scanners to detect defects and optimise board layout.</p>
+
+    <form class="quiz" data-week="Week 4" id="adv-week4-quiz">
+      <fieldset>
+        <legend><b>Week 4 Advanced Quiz</b></legend>
+        <ol>
+          <li>
+            <p>G1 in a CNC program indicates:</p>
+            <label><input data-correct="false" name="w4_q1" type="radio"> A. rapid move</label><br>
+            <label><input data-correct="true" name="w4_q1" type="radio"> B. linear feed move</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> C. spindle start</label><br>
+            <label><input data-correct="false" name="w4_q1" type="radio"> D. tool change</label><br>
+          </li>
+          <li>
+            <p>If each of four sides of a box is ±0.1 mm, worst‑case diagonal error due to tolerance stack‑up could reach:</p>
+            <label><input data-correct="false" name="w4_q2" type="radio"> A. 0.1 mm</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> B. 0.2 mm</label><br>
+            <label><input data-correct="true" name="w4_q2" type="radio"> C. 0.4 mm</label><br>
+            <label><input data-correct="false" name="w4_q2" type="radio"> D. 1 mm</label><br>
+          </li>
+          <li>
+            <p>Chip‑load is defined as:</p>
+            <label><input data-correct="false" name="w4_q3" type="radio"> A. mass of chips collected</label><br>
+            <label><input data-correct="true" name="w4_q3" type="radio"> B. feed per tooth per revolution</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> C. dust extraction rate</label><br>
+            <label><input data-correct="false" name="w4_q3" type="radio"> D. tool diameter</label><br>
+          </li>
+          <li>
+            <p>Which CNC holding method best avoids cutter‑head collision on thin sheet stock?</p>
+            <label><input data-correct="false" name="w4_q4" type="radio"> A. Screw clamps</label><br>
+            <label><input data-correct="true" name="w4_q4" type="radio"> B. Vacuum table</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> C. Double‑sided tape only</label><br>
+            <label><input data-correct="false" name="w4_q4" type="radio"> D. Hot‑melt glue dots</label><br>
+          </li>
+          <li>
+            <p>A post‑processor’s role is to:</p>
+            <label><input data-correct="false" name="w4_q5" type="radio"> A. calculate spindle speed</label><br>
+            <label><input data-correct="true" name="w4_q5" type="radio"> B. convert CAM toolpaths to machine‑specific G‑code</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> C. apply wood finish</label><br>
+            <label><input data-correct="false" name="w4_q5" type="radio"> D. measure tool wear</label><br>
+          </li>
+          <li>
+            <p>Parametric CAD models are valuable in production because they:</p>
+            <label><input data-correct="false" name="w4_q6" type="radio"> A. lock dimensions</label><br>
+            <label><input data-correct="true" name="w4_q6" type="radio"> B. rebuild automatically when key dimensions change</label><br>
+            <label><input data-correct="false" name="w4_q6" type="radio"> C. use more memory</label><br>
+            <label><input data-correct="false" name="w4_q6" type="radio"> D. eliminate tolerances</label><br>
+          </li>
+          <li>
+            <p>An &lt;em&gt;absolute&lt;/em&gt; measurement system references all coordinates to:</p>
+            <label><input data-correct="false" name="w4_q7" type="radio"> A. each part’s edge</label><br>
+            <label><input data-correct="true" name="w4_q7" type="radio"> B. a fixed machine origin</label><br>
+            <label><input data-correct="false" name="w4_q7" type="radio"> C. the last cut feature</label><br>
+            <label><input data-correct="false" name="w4_q7" type="radio"> D. random zero</label><br>
+          </li>
+          <li>
+            <p>Tool wear compensation in G‑code is handled by:</p>
+            <label><input data-correct="true" name="w4_q8" type="radio"> A. G41/G42</label><br>
+            <label><input data-correct="false" name="w4_q8" type="radio"> B. G17</label><br>
+            <label><input data-correct="false" name="w4_q8" type="radio"> C. M09</label><br>
+            <label><input data-correct="false" name="w4_q8" type="radio"> D. T0</label><br>
+          </li>
+          <li>
+            <p>Optical defect scanners in finger‑jointing lines primarily identify:</p>
+            <label><input data-correct="false" name="w4_q9" type="radio"> A. glue spread rate</label><br>
+            <label><input data-correct="true" name="w4_q9" type="radio"> B. knots and grain deviation</label><br>
+            <label><input data-correct="false" name="w4_q9" type="radio"> C. colour variation</label><br>
+            <label><input data-correct="false" name="w4_q9" type="radio"> D. barcode labels</label><br>
+          </li>
+          <li>
+            <p>Which CAM strategy minimises tool engagement and heat for plywood cutting?</p>
+            <label><input data-correct="false" name="w4_q10" type="radio"> A. conventional climb at full depth</label><br>
+            <label><input data-correct="false" name="w4_q10" type="radio"> B. raster pocketing</label><br>
+            <label><input data-correct="true" name="w4_q10" type="radio"> C. trochoidal adaptive clearing</label><br>
+            <label><input data-correct="false" name="w4_q10" type="radio"> D. plunge drilling</label><br>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitAdvancedQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

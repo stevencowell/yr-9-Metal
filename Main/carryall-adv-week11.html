@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 11 Advanced Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 11: CAD/CAM Scenario</b></summary>
+  <article>
+    <h4>Advanced Theory: CAD/CAM Scenario</h4>
+    <p>Advanced CAD leverages parametric constraints—dimensions driven by equations—allowing instant resizing of entire assemblies.  Assemblies use mates (coincident, concentric, gear) to simulate kinematics and perform interference detection.  Mass properties tools estimate centre of gravity.  Export formats such as STEP preserve solid data for cross‑platform CAM, while STL is mesh‑only.  Design‑for‑Manufacture Rule‑checks flag features smaller than tool diameters, and integrated BOM generators link directly to ERP systems.</p>
+
+    <form class="quiz" data-week="Week 11" id="adv-week11-quiz">
+      <fieldset>
+        <legend><b>Week 11 Advanced Quiz</b></legend>
+        <ol>
+          <li>
+            <p>A concentric mate in CAD constrains two parts to share:</p>
+            <label><input data-correct="false" name="w11_q1" type="radio"> A. a plane</label><br>
+            <label><input data-correct="true" name="w11_q1" type="radio"> B. an axis</label><br>
+            <label><input data-correct="false" name="w11_q1" type="radio"> C. a point</label><br>
+            <label><input data-correct="false" name="w11_q1" type="radio"> D. a pattern</label><br>
+          </li>
+          <li>
+            <p>Parametric modelling allows size change by editing:</p>
+            <label><input data-correct="false" name="w11_q2" type="radio"> A. bitmap pixels</label><br>
+            <label><input data-correct="true" name="w11_q2" type="radio"> B. driving dimensions and equations</label><br>
+            <label><input data-correct="false" name="w11_q2" type="radio"> C. mesh triangles</label><br>
+            <label><input data-correct="false" name="w11_q2" type="radio"> D. render settings</label><br>
+          </li>
+          <li>
+            <p>Which export format retains solid parametric data?</p>
+            <label><input data-correct="false" name="w11_q3" type="radio"> A. STL</label><br>
+            <label><input data-correct="false" name="w11_q3" type="radio"> B. OBJ</label><br>
+            <label><input data-correct="true" name="w11_q3" type="radio"> C. STEP</label><br>
+            <label><input data-correct="false" name="w11_q3" type="radio"> D. JPEG</label><br>
+          </li>
+          <li>
+            <p>Interference detection finds:</p>
+            <label><input data-correct="false" name="w11_q4" type="radio"> A. materials cost</label><br>
+            <label><input data-correct="false" name="w11_q4" type="radio"> B. mass properties</label><br>
+            <label><input data-correct="true" name="w11_q4" type="radio"> C. overlapping solids in an assembly</label><br>
+            <label><input data-correct="false" name="w11_q4" type="radio"> D. file corruption</label><br>
+          </li>
+          <li>
+            <p>A design table (spreadsheet) in CAD is used to:</p>
+            <label><input data-correct="false" name="w11_q5" type="radio"> A. store toolpaths</label><br>
+            <label><input data-correct="false" name="w11_q5" type="radio"> B. generate exploded views</label><br>
+            <label><input data-correct="true" name="w11_q5" type="radio"> C. drive multiple part configurations</label><br>
+            <label><input data-correct="false" name="w11_q5" type="radio"> D. render photorealistic images</label><br>
+          </li>
+          <li>
+            <p>Centre‑of‑gravity calculations help:</p>
+            <label><input data-correct="false" name="w11_q6" type="radio"> A. select Pantone colours</label><br>
+            <label><input data-correct="true" name="w11_q6" type="radio"> B. balance handle location</label><br>
+            <label><input data-correct="false" name="w11_q6" type="radio"> C. export G‑code</label><br>
+            <label><input data-correct="false" name="w11_q6" type="radio"> D. measure noise</label><br>
+          </li>
+          <li>
+            <p>Gear mates simulate motion by relating:</p>
+            <label><input data-correct="false" name="w11_q7" type="radio"> A. speed to voltage</label><br>
+            <label><input data-correct="true" name="w11_q7" type="radio"> B. angular ratios between shafts</label><br>
+            <label><input data-correct="false" name="w11_q7" type="radio"> C. linear threads</label><br>
+            <label><input data-correct="false" name="w11_q7" type="radio"> D. loft profiles</label><br>
+          </li>
+          <li>
+            <p>Design‑for‑Manufacture analysis typically flags:</p>
+            <label><input data-correct="false" name="w11_q8" type="radio"> A. missing textures</label><br>
+            <label><input data-correct="true" name="w11_q8" type="radio"> B. features smaller than cutting tool diameter</label><br>
+            <label><input data-correct="false" name="w11_q8" type="radio"> C. RAM usage</label><br>
+            <label><input data-correct="false" name="w11_q8" type="radio"> D. render time</label><br>
+          </li>
+          <li>
+            <p>A Bill of Materials (BOM) extracted from CAD usually includes:</p>
+            <label><input data-correct="false" name="w11_q9" type="radio"> A. toolpath code</label><br>
+            <label><input data-correct="true" name="w11_q9" type="radio"> B. part numbers and quantities</label><br>
+            <label><input data-correct="false" name="w11_q9" type="radio"> C. security certificates</label><br>
+            <label><input data-correct="false" name="w11_q9" type="radio"> D. Gantt chart</label><br>
+          </li>
+          <li>
+            <p>Mesh tessellation affects:</p>
+            <label><input data-correct="false" name="w11_q10" type="radio"> A. CAM tolerance</label><br>
+            <label><input data-correct="true" name="w11_q10" type="radio"> B. surface smoothness of STL export</label><br>
+            <label><input data-correct="false" name="w11_q10" type="radio"> C. colour fidelity</label><br>
+            <label><input data-correct="false" name="w11_q10" type="radio"> D. cloud licensing</label><br>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitAdvancedQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>

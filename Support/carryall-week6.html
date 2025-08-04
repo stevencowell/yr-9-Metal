@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carry‑all — Week 6 Support & Quiz</title>
+  <link rel="stylesheet" href="../carryall.css">
+</head>
+
+<body>
+
+<details open>
+  <summary><b>Week 6: Joinery Techniques</b></summary>
+  <article>
+    <h4>Support Theory</h4>
+    <p>A joint is how two pieces of wood are connected. A basic <strong>butt joint</strong>
+       glues the end of one board to the face of another. A <strong>lap joint</strong>
+       overlaps notches for extra strength. Glue needs tight-fitting surfaces and
+       clamps to set firmly. Screws or dowels can reinforce weak joints. Drilling
+       a <em>pilot hole</em> before screwing stops wood from splitting.</p>
+
+    <form class="quiz" data-week="Week 6" id="support-week6-quiz">
+      <fieldset>
+        <legend><b>Week 6 Quiz</b></legend>
+        <ol>
+          <li>
+            <p>What is a butt joint?</p>
+            <label><input data-correct="false" name="w6_q1" type="radio"> A. Two pieces joined with a hinge</label><br>
+            <label><input data-correct="true"  name="w6_q1" type="radio"> B. Two ends glued together at 90°</label><br>
+            <label><input data-correct="false" name="w6_q1" type="radio"> C. A curved handle joint</label><br>
+            <label><input data-correct="false" name="w6_q1" type="radio"> D. A part that uses screws and glue</label>
+          </li>
+
+          <li>
+            <p>Why do we use glue on wood joints?</p>
+            <label><input data-correct="false" name="w6_q2" type="radio"> A. To make the wood shiny</label><br>
+            <label><input data-correct="false" name="w6_q2" type="radio"> B. So we don’t have to use clamps</label><br>
+            <label><input data-correct="true"  name="w6_q2" type="radio"> C. To hold the pieces together strongly</label><br>
+            <label><input data-correct="false" name="w6_q2" type="radio"> D. To avoid measuring</label>
+          </li>
+
+          <li>
+            <p>Which joint is stronger than a plain butt joint?</p>
+            <label><input data-correct="true"  name="w6_q3" type="radio"> A. Lap joint</label><br>
+            <label><input data-correct="false" name="w6_q3" type="radio"> B. Paint joint</label><br>
+            <label><input data-correct="false" name="w6_q3" type="radio"> C. Clip joint</label><br>
+            <label><input data-correct="false" name="w6_q3" type="radio"> D. Bent joint</label>
+          </li>
+
+          <li>
+            <p>What helps glue stick better on a joint?</p>
+            <label><input data-correct="false" name="w6_q4" type="radio"> A. Leaving gaps between the pieces</label><br>
+            <label><input data-correct="false" name="w6_q4" type="radio"> B. Letting it dry in the sun</label><br>
+            <label><input data-correct="true"  name="w6_q4" type="radio"> C. Tight-fitting surfaces and clamping</label><br>
+            <label><input data-correct="false" name="w6_q4" type="radio"> D. Using more wood</label>
+          </li>
+
+          <li>
+            <p>When should you use a pilot hole?</p>
+            <label><input data-correct="false" name="w6_q5" type="radio"> A. Before cutting with a saw</label><br>
+            <label><input data-correct="true"  name="w6_q5" type="radio"> B. Before screwing into the wood</label><br>
+            <label><input data-correct="false" name="w6_q5" type="radio"> C. Before sanding</label><br>
+            <label><input data-correct="false" name="w6_q5" type="radio"> D. Before drawing a sketch</label>
+          </li>
+        </ol>
+
+        <button class="check-btn" type="button" onclick="submitSupportQuiz(this)">Check Answers</button>
+        <span class="quiz-msg"></span>
+      </fieldset>
+    </form>
+  </article>
+</details>
+
+  <script src="../sharedSubmission.js"></script>
+</body>
+</html>
